@@ -20,13 +20,10 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
-    script: | 
-          $Env:Uipath_toolpath = 'C:\Users\akhileshk3\AppData\Local\Programs\UiPath\Studio\UiRobot.exe'
-          Write-Host  "Uipath_toolpath set to $Env:Uipath_toolpath"
-          displayname: 'Set Uipath_toolpath'
-- task: UiPathInstallPlatform@4
-  inputs:
-    cliVersion: 'WIN_23.10.8894.39673'
+    script: |
+      [System.Environment]: :Set Environment-
+      Variable("Uipath_toolpath", "C:\Users\akhileshk3\AppData\Local\Programs\UiPath\Studio\UiRobot.exe",
+      "machine")
 - task: UiPathRunJob@4
   inputs:
     orchestratorConnection: 'con_Orchestrator'
