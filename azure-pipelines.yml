@@ -19,9 +19,8 @@ steps:
   displayName: 'Run a multi-line script'
 - task: UiPathRunJob@4
   inputs:
-    toolpath: 'C:\Users\akhileshk3\AppData\Local\Programs\UiPath\Studio\UiRobot.exe'
-    orchestratorConnection: 'test_orc'
+    orchestratorConnection: 'con_Orchestrator'
     processName: 'Azure_Test'
     folderName: 'akhil.kalg067@gmail.com''s workspace (Converted)'
-    jobType: 'TestAutomation'
     user: 'C:\Users\akhileshk3'
+    machine: 'BSBLRL-16320'
