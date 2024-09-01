@@ -10,6 +10,10 @@ pool:
   Akhilesh_Personal
 
 steps:
+- powershell: 
+    $Env:Uipath_toolpath = 'C:\Users\akhileshk3\AppData\Local\Programs\UiPath\Studio\UiRobot.exe'
+    Write-Host  "Uipath_toolpath set to $Env:Uipath_toolpath"
+    displayname: 'Set Uipath_toolpath'
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
