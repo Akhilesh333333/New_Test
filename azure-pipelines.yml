@@ -22,5 +22,5 @@ steps:
     toolpath: 'C:\Users\akhileshk3\AppData\Local\Programs\UiPath\Studio\UiRobot.exe'
     orchestratorConnection: 'con_Orchestrator'
     processName: 'Azure_Test'
-    folderName: 'Shared'
+    folderName: 'akhil.kalg067@gmail.com's workspace (Converted)'
     user: 'C:\Users\akhileshk3'
