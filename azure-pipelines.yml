@@ -17,9 +17,11 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: UiPathDeploy@4
+- task: UiPathRunJob@4
   inputs:
     toolpath: 'C:\Users\akhileshk3\AppData\Local\Programs\UiPath\Studio\UiRobot.exe'
-    orchestratorConnection: 'con_Orchestrator'
-    packagesPath: 'C:\Users\akhileshk3\Documents\UiPath\Azure_Test'
+    orchestratorConnection: 'test_orc'
+    processName: 'Azure_Test'
     folderName: 'akhil.kalg067@gmail.com''s workspace (Converted)'
+    jobType: 'TestAutomation'
+    user: 'C:\Users\akhileshk3'
