@@ -20,8 +20,7 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
-    script: |
-      powershell: 
+    script: | 
           $Env:Uipath_toolpath = 'C:\Users\akhileshk3\AppData\Local\Programs\UiPath\Studio\UiRobot.exe'
           Write-Host  "Uipath_toolpath set to $Env:Uipath_toolpath"
           displayname: 'Set Uipath_toolpath'
